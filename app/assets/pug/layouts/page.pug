@@ -1,13 +1,9 @@
-//-
-	- Default layout of the app
-	- At least, use it for index.html
-
 doctype html
 html
 	head
 		include ../partials/_meta
 		block pageTitle
-			title Document
+			title Page
 		|
 		|
 		// Styles
@@ -19,8 +15,12 @@ html
 		|
 		|
 		block navbar
-			- let activePage = 'home'
+			- let activePage = 'page'
 			include ../partials/_navbar
+
+		block pageBanner
+			include ../partials/_page-banner
+
 		|
 		|
 		block content
