@@ -1,0 +1,12 @@
+.testimonials {
+	&__item-quote {
+		.fas {
+			opacity: .75;
+			font-size: 1.5rem;
+		}
+	}
+
+	.fa-star {
+		font-size: 1.5rem !important;
+	}
+}

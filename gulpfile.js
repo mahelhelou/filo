@@ -2,9 +2,10 @@ const { src, dest, watch, series } = require("gulp");
 
 // Html packages
 const pug = require("gulp-pug");
+const spacesToTabs = require("spaces-to-tabs");
 
 // Styles packages
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 
 // Scripts packages
 const terser = require("gulp-terser");
@@ -13,6 +14,12 @@ const concat = require("gulp-concat");
 // Global packages
 const browserSync = require("browser-sync").create();
 const rename = require("gulp-rename");
+
+// Convert pug spaces to tabs
+function pugSpacesToTabs(cb) {
+	return src("app/assets/pug/**/*.pug").piple(spacesToTabs());
+	cb();
+}
 
 // Compile pug into Html
 function html() {
@@ -40,7 +47,7 @@ function styles() {
 function scripts() {
 	const jsPath = {
 		jquery: "app/assets/scripts/libs/jquery.min.js",
-		popper: "app/assets/scripts/libs/popper.min.js",
+		// popper: "app/assets/scripts/libs/popper.min.js",
 		owl: "app/assets/scripts/libs/owl.carousel.min.js",
 		bootstrap: "app/assets/scripts/libs/bootstrap.min.js",
 		app: "app/assets/scripts/app.js",
@@ -83,6 +90,7 @@ function watchFiles() {
 	watch("app/assets/scripts/**/*.js", series(scripts, browserSyncReload));
 }
 
+exports.pugSpacesToTabs = pugSpacesToTabs;
 exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;

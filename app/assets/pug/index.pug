@@ -1,1 +1,35 @@
-//- index.html
+extends ./layouts/default
+
+//- Blocks
+block pageTitle
+	title الرئيسية | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'home'
+	include ./partials/_navbar
+
+block content
+	// Showcase
+	section.showcase
+		.container
+			.row
+				.col-lg-6
+					h1.mt-0.mt-md-5.pt-5.font-weight-bolder كل تفصيلة ببلدك.. هنحكيها لابنك
+					button.btn.btn-danger.btn-lg.rounded-pill.mt-5 جرّب الآن
+
+				.col-lg-6
+					.showcase__image
+						img.img-fluid(src='https://picsum.photos/200/300?random=2' alt='')
+	// showcase-end
+	|
+	|
+	// Videos
+	section.videos.py-5
+		.video__item
+
+	// videos-end
+	|
+	|
+	include ./partials/_testimonials
+	|
+	|

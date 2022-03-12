@@ -1,0 +1,16 @@
+//- Team member (Team page)
+mixin teamMember(teamMemberObj)
+	.row
+		.col-md-3.team__img
+			img.img-fluid(src= teamMemberObj.img)
+		.col-md-9.team__info
+			h3.team__name= teamMemberObj.name
+			p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur et, voluptates itaque repellendus assumenda suscipit optio nobis. Hic, in. Voluptas itaque ex et consectetur dolor neque optio nisi, nobis sunt rerum? Minus totam, ullam perspiciatis at ab accusamus eveniet eos repudiandae aliquid eum rem eius placeat ut, voluptate cupiditate maxime!
+
+//- Team member (Index page)
+mixin teamMemberIndex(teamMemberIndexObj)
+	.col-md-3.mt-4.mt-md-0
+		.team__img
+			img.img-fluid(src= teamMemberIndexObj.img)
+		.team__info
+			h3.team__name= teamMemberIndexObj.name

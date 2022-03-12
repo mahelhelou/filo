@@ -1,0 +1,9 @@
+mixin question(quesObj)
+	.col-md-6
+		button.d-flex.align-items-center.text-left.border-0.text-dark.btn-block.rounded-0.py-4(type="button" data-toggle="collapse" data-target=`#multiCollapseExample${quesObj.index}` aria-expanded="false" aria-controls=`multiCollapseExample${quesObj.index}`)
+			i.m-0.ml-3.far.fa-question-circle.h2.font-weight-light.mr-3.primary-golden-color
+			h5.m-0.d-inline.font-weight-bold= quesObj.title
+			i.fas.fa-caret-down.ml-auto.mr-3
+
+		div(id=`multiCollapseExample${quesObj.index}` class="collapse multi-collapse")
+			.card.card-body= quesObj.answer
