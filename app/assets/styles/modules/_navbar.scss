@@ -29,7 +29,7 @@
 			}
 
 			.nav-link {
-				color: #333 !important;
+				color: #121212 !important;
 
 				@include responsive(atSmall) {
 					text-align: center !important;
@@ -51,7 +51,7 @@
 
 	.nav-item:hover,
 	.nav-item.active {
-		font-weight: bold;
+		// font-weight: bold;
 
 		&::after {
 			width: 7.5%;
@@ -66,9 +66,23 @@
 		}
 	}
 
-	.btn {
-		@include responsive(atMedium) {
-			margin-top: 0;
+	&__actions {
+		a {
+			margin-right: 1.5rem;
+			text-decoration: none;
+
+
+			.fa-search {
+				color: #569EDD;
+			}
+
+			.fa-bell {
+				color: #707070;
+			}
+
+			.fa-user {
+				color: #F4775C;
+			}
 		}
 	}
 }
