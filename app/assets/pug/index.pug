@@ -24,9 +24,12 @@ block content
 	|
 	|
 	// Videos
-	section.videos.py-5
-		.section-title.mb-2 بلدك في فيديو!
-		.section-description شاهد المئات من قصص الأطفال المتنوعة من قصص تاريخية وحيوانات وقصص تعزز قيم مجتمعية
+	section#videos.videos.py-5
+		h2.section-title.mb-3 بلدك في فيديو!
+		p.section-description شاهد المئات من قصص الأطفال المتنوعة من قصص تاريخية وحيوانات وقصص تعزز قيم مجتمعية
+		.mt-5.owl-carousel
+			.videos__item
+				img(src="https://placehold.it/300/300", alt="")
 
 
 	// videos-end
@@ -34,7 +37,7 @@ block content
 	|
 	// Plans
 	section.plans.py-5
-		.section-title.mb-2 خطط الاشتراك
+		.section-title.mb-3 خطط الاشتراك
 		.section-description مستعد لإعداد مكتبتك؟ اختر مدة الاشتراك التي تناسبك
 
 	// plans-end
@@ -42,6 +45,6 @@ block content
 	|
 	// Testimonials
 	section.testimonials.py-5
-		.section-title.mb-2 آراء مستخدمينا الصغار
+		.section-title.mb-3 آراء مستخدمينا الصغار
 
 	// testimonials-end

@@ -2,7 +2,6 @@ const { src, dest, watch, series } = require("gulp");
 
 // Html packages
 const pug = require("gulp-pug");
-const spacesToTabs = require("spaces-to-tabs");
 
 // Styles packages
 const sass = require("gulp-sass")(require("sass"));
@@ -14,12 +13,6 @@ const concat = require("gulp-concat");
 // Global packages
 const browserSync = require("browser-sync").create();
 const rename = require("gulp-rename");
-
-// Convert pug spaces to tabs
-function pugSpacesToTabs(cb) {
-	return src("app/assets/pug/**/*.pug").piple(spacesToTabs());
-	cb();
-}
 
 // Compile pug into Html
 function html() {
@@ -38,7 +31,7 @@ function styles() {
 				outputStyle: "compressed",
 			})
 		)
-		.pipe(rename("style.css"))
+		.pipe(rename("styles.css"))
 		.pipe(dest("app/dist", { sourcemaps: "." }))
 		.pipe(browserSync.stream());
 }
@@ -52,9 +45,9 @@ function scripts() {
 		bootstrap: "app/assets/scripts/libs/bootstrap.min.js",
 		app: "app/assets/scripts/app.js",
 	};
-	// return src([jsPath.jquery, jsPath.popper, jsPath.owl, jsPath.bootstrap, jsPath.app], { sourcemaps: true })
+
 	return src(Object.values(jsPath), { sourcemaps: true })
-		.pipe(concat("bundle.js"))
+		.pipe(concat("bundled.js"))
 		.pipe(terser())
 		.pipe(dest("app/dist", { sourcemaps: "." }))
 		.pipe(browserSync.stream());
@@ -90,7 +83,6 @@ function watchFiles() {
 	watch("app/assets/scripts/**/*.js", series(scripts, browserSyncReload));
 }
 
-exports.pugSpacesToTabs = pugSpacesToTabs;
 exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
