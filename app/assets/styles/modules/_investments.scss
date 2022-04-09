@@ -11,7 +11,7 @@
 
 			span:first-child {
 				font-weight: bold;
-				color: $americanRiver;
+				color: $mainGreen;
 			}
 
 			span:last-child {
@@ -28,7 +28,7 @@
 				&::after {
 					position: absolute;
 					content: '';
-					background: $americanRiver;
+					background: $mainGreen;
 					width: 100%;
 					height: 0.25rem;
 					left: 0;

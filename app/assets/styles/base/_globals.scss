@@ -41,7 +41,7 @@ section {
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 0;
-		background: $chiGong;
+		background: $mainOrange;
 
 		@include responsive(atLarge) {
 			left: 0;
@@ -63,6 +63,14 @@ section {
 		@include responsive(atLarge) {
 			font-size: 2rem !important;
 		}
+
+		&--smaller {
+			font-size: 1.5rem !important;
+		}
+
+		&--right {
+			text-align: right;
+		}
 	}
 
 	.section-description {
@@ -79,12 +87,12 @@ section {
 
 .link-danger {
 	text-decoration: none;
-	color: $chiGong;
+	color: $mainOrange;
 	font-weight: bold;
 
 	&:hover {
 		text-decoration: none;
 		font-weight: bold !important;
-		color: $americanRiver !important;
+		color: $mainGreen !important;
 	}
 }

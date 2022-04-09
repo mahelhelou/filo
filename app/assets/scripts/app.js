@@ -4,12 +4,12 @@ jQuery(function ($) {
 	let footerHeight = $(".site-footer").height();
 
 	// Full size section
-	$(".full-height-section").height(
+	/* $(".full-height-section").height(
 		windowHeight - (navbarHeight + footerHeight)
-	);
+	); */
 
 	// Videos owl carousel
-	$("#videos .owl-carousel").owlCarousel({
+	$("#videos-section .owl-carousel").owlCarousel({
 		loop: true,
 		autoplay: true,
 		autoplay: true,

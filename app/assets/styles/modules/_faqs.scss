@@ -3,7 +3,7 @@
 		margin-bottom: 2rem;
 
 		button {
-			border-left: 4px solid $americanRiver;
+			border-left: 4px solid $mainGreen;
 			transition: .35s all ease-out;
 
 			i.fa-caret-down {
@@ -11,7 +11,7 @@
 			}
 
 			&:hover {
-				background: $americanRiver;
+				background: $mainGreen;
 				color: #fff !important;
 			}
 		}
