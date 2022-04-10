@@ -49,4 +49,6 @@ jQuery(function ($) {
 			},
 		},
 	});
+
+	alert("Alert!");
 });

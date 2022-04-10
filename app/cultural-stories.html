@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#"><i class="fas fa-user"></i></a></div>
+          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#login-user-has-account"><i class="fas fa-user"></i></a></div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -102,6 +102,22 @@
     <!-- Footer-->
     <footer class="site-footer py-5 bg-dark text-white"><img src="images/footer-bg.png"></footer>
     <!-- footer-end-->
+    
+    <!-- Modals-->
+        <div class="login-form modal fade" id="login-user-has-account" tabindex="-1" role="dialog" aria-labelledby="loginFormLabel" aria-hidden="true"></div>
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <div class="container">
+                <h3 class="login-form__title">حساب جديد</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name 2">
+                <input type="text" placeholder="Name 3">
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- modals-end-->
     
     <!-- Scripts-->
     <script src="./dist/bundled.js"></script>
