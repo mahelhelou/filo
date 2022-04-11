@@ -33,7 +33,9 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#login-user-has-account"><i class="fas fa-user"></i></a></div>
+          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a>
+            <button data-toggle="modal" data-target="#loginUserWithoutAccount"><i class="fas fa-user"></i></button>
+          </div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -78,18 +80,65 @@
       <div class="section-title mb-3">آراء مستخدمينا الصغار</div>
     </section>
     <!-- testimonials-end-->
+    <!-- Testimonials-->
+    <section class="testimonials text-center py-5" id="testimonials">
+      <div class="container">
+        <h2 class="section-title mb-5">From Our Investors</h2>
+        <div class="owl-carousel">
+              <div class="testimonials__item">
+                <div class="testimonials__item-quote"><i class="fas fa-quote-left mb-3 text-danger"></i>
+                  <p class="testimonials__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit ipsum illum maiores aliquid amet.</p>
+                </div>
+                <h4 class="text-danger mt-3">John Doe</h4>
+                <h6 class="mb-3 font-italic font-weight-bold">Angle Investor</h6>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-quote"><i class="fas fa-quote-left mb-3 text-danger"></i>
+                  <p class="testimonials__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit ipsum illum maiores aliquid amet.</p>
+                </div>
+                <h4 class="text-danger mt-3">John Doe</h4>
+                <h6 class="mb-3 font-italic font-weight-bold">Angle Investor</h6>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-quote"><i class="fas fa-quote-left mb-3 text-danger"></i>
+                  <p class="testimonials__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit ipsum illum maiores aliquid amet.</p>
+                </div>
+                <h4 class="text-danger mt-3">John Doe</h4>
+                <h6 class="mb-3 font-italic font-weight-bold">Angle Investor</h6>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-quote"><i class="fas fa-quote-left mb-3 text-danger"></i>
+                  <p class="testimonials__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit ipsum illum maiores aliquid amet.</p>
+                </div>
+                <h4 class="text-danger mt-3">John Doe</h4>
+                <h6 class="mb-3 font-italic font-weight-bold">Angle Investor</h6>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-quote"><i class="fas fa-quote-left mb-3 text-danger"></i>
+                  <p class="testimonials__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit ipsum illum maiores aliquid amet.</p>
+                </div>
+                <h4 class="text-danger mt-3">John Doe</h4>
+                <h6 class="mb-3 font-italic font-weight-bold">Angle Investor</h6>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials-end-->
     
     <!-- Footer-->
     <footer class="site-footer py-5 bg-dark text-white"><img src="images/footer-bg.png"></footer>
     <!-- footer-end-->
     
     <!-- Modals-->
-        <div class="login-form modal fade" id="login-user-has-account" tabindex="-1" role="dialog" aria-labelledby="loginFormLabel" aria-hidden="true"></div>
-        <div class="modal-dialog modal-xl" role="document">
+        <div class="login-form modal fade" id="loginUserWithoutAccount" tabindex="-1" role="dialog" aria-labelledby="loginUserWithoutAccount" aria-hidden="true"></div>
+        <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-body text-center">
+            <div class="modal-header">
+              <h3 class="login-form__title">حساب جديد</h3>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
               <div class="container">
-                <h3 class="login-form__title">حساب جديد</h3>
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Name 2">
                 <input type="text" placeholder="Name 3">

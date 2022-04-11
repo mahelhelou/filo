@@ -9,7 +9,7 @@ jQuery(function ($) {
 	); */
 
 	// Videos owl carousel
-	$("#videos-section .owl-carousel").owlCarousel({
+	/* $("#videos-section .owl-carousel").owlCarousel({
 		loop: true,
 		autoplay: true,
 		autoplay: true,
@@ -27,7 +27,7 @@ jQuery(function ($) {
 				items: 4,
 			},
 		},
-	});
+	}); */
 
 	// Testimonials owl carousel
 	$("#testimonials .owl-carousel").owlCarousel({
@@ -49,6 +49,4 @@ jQuery(function ($) {
 			},
 		},
 	});
-
-	alert("Alert!");
 });
