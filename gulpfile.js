@@ -39,10 +39,10 @@ function styles() {
 // Concat and manage scripts
 function scripts() {
 	const jsPath = {
-		jquery: "app/assets/scripts/libs/jquery.slim.min.js",
+		jquery: "app/assets/scripts/libs/jquery.min.js",
 		popper: "app/assets/scripts/libs/popper.min.js",
 		bootstrap: "app/assets/scripts/libs/bootstrap.min.js",
-		// owl: "app/assets/scripts/libs/owl.carousel.min.js",
+		owl: "app/assets/scripts/libs/owl.carousel.min.js",
 		app: "app/assets/scripts/app.js",
 	};
 

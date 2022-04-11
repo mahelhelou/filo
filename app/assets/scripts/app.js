@@ -9,8 +9,12 @@ jQuery(function ($) {
 	); */
 
 	// Videos owl carousel
-	/* $("#videos-section .owl-carousel").owlCarousel({
+	$("#videos-section .owl-carousel").owlCarousel({
 		loop: true,
+		rtl: true,
+		margin: 15,
+		// rewind: true,
+		center: true,
 		autoplay: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
@@ -27,7 +31,7 @@ jQuery(function ($) {
 				items: 4,
 			},
 		},
-	}); */
+	});
 
 	// Testimonials owl carousel
 	$("#testimonials .owl-carousel").owlCarousel({

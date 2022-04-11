@@ -33,9 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a>
-            <button data-toggle="modal" data-target="#loginUserWithoutAccount"><i class="fas fa-user"></i></button>
-          </div>
+          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#" data-toggle="modal" data-target="#loginUserHasNoAccount"><i class="fas fa-user"></i></a></div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -107,18 +105,28 @@
     <!-- footer-end-->
     
     <!-- Modals-->
-        <div class="login-form modal fade" id="loginUserWithoutAccount" tabindex="-1" role="dialog" aria-labelledby="loginUserWithoutAccount" aria-hidden="true"></div>
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="login-form__title">حساب جديد</h3>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Name 2">
-                <input type="text" placeholder="Name 3">
+        <!-- Modal-->
+        <div class="modal fade" id="loginUserHasNoAccount" tabindex="-1" role="dialog" aria-labelledby="undefinedLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-title text-center">
+                  <h4>حساب جديد</h4>
+                  <div class="d-flex flex-column text-center">
+                    <form>
+                      <div class="form-group">
+                        <input class="form-control" id="email1" type="email" placeholder="Your email address...">
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="password1" type="password" placeholder="Your password...">
+                      </div>
+                      <button class="btn btn-info btn-block btn-round" type="button">Login</button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,9 +1,15 @@
 .videos {
 	&__item {
-		width: 250px;
 		height: 250px;
-		background: #333;
+		background: $mainLightGreen;
 		display: flex;
+		border-radius: .3rem;
+		transition: height .3s ease-in, transform .3s ease-in;
+
+		&:hover {
+			height: 300px;
+			transform: translateY(-50px);
+		}
 
 		&--controls {
 			position: absolute;
