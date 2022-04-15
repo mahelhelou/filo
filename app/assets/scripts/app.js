@@ -8,6 +8,15 @@ jQuery(function ($) {
 		windowHeight - (navbarHeight + footerHeight)
 	); */
 
+	// DOM clicks
+	$(".stories-section__item-save").click(function () {
+		$(this).html(
+			$(this).html() === '<span>حفظ</span><i class="far fa-bookmark"></i>'
+				? '<span>محفوظ</span><i class="fas fa-bookmark"></i>'
+				: '<span>حفظ</span><i class="far fa-bookmark"></i>'
+		);
+	});
+
 	// Videos owl carousel
 	$("#videos-section .owl-carousel").owlCarousel({
 		loop: true,
@@ -15,6 +24,7 @@ jQuery(function ($) {
 		margin: 15,
 		// rewind: true,
 		center: true,
+		stagePadding: 1,
 		autoplay: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
@@ -29,6 +39,9 @@ jQuery(function ($) {
 			},
 			1000: {
 				items: 4,
+			},
+			1200: {
+				items: 6,
 			},
 		},
 	});

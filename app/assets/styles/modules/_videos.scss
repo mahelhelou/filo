@@ -1,14 +1,30 @@
 .videos {
+	.owl-carousel {
+		overflow-y: scroll;
+	}
+
 	&__item {
 		height: 250px;
 		background: $mainLightGreen;
 		display: flex;
-		border-radius: .3rem;
-		transition: height .3s ease-in, transform .3s ease-in;
+		border-radius: .5rem;
+		transition: transform .3s ease-in, box-shadow .3s ease-in;
+
+
 
 		&:hover {
-			height: 300px;
 			transform: translateY(-50px);
+			box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .3);
+			background: $mainLighterGreen;
+		}
+
+		a {
+			margin: auto;
+
+			img {
+				width: 50px !important;
+				height: 50px !important;
+			}
 		}
 
 		&--controls {

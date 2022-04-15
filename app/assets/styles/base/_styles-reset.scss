@@ -1,9 +1,17 @@
 // Bootstrap Reset
 .btn-danger {
-	background: #F4775C !important;
+	background: $mainOrange !important;
+
+	&:hover {
+		background: darken($mainOrange, .5) !important;
+	}
 }
 
 .btn-lg {
 	padding-left: 5rem !important;
 	padding-right: 5rem !important;
+}
+
+.rounded-pill {
+	border-radius: 50rem !important;
 }

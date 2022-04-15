@@ -15,7 +15,10 @@ block content
 			.row
 				.col-lg-6
 					h1.mt-0.mt-md-5.pt-5.font-weight-bolder كل تفصيلة ببلدك.. هنحكيها لابنك
-					button.btn.btn-danger.btn-lg.rounded-pill.mt-5 جرّب الآن
+					.showcase__cta
+						button.btn.btn-danger.btn-lg.rounded-pill.mt-5 جرّب الآن
+						.showcase__cta-img
+							img(src="images/play-btn-orange.png")
 
 				.col-lg-6
 					.showcase__image
@@ -29,7 +32,17 @@ block content
 		p.section-description شاهد المئات من قصص الأطفال المتنوعة من قصص تاريخية وحيوانات وقصص تعزز قيم مجتمعية
 		.mt-5.owl-carousel
 			.videos__item
-				img(src="https://placehold.it/300/300", alt="")
+				a.videos__item-icon(href="#")
+					img(src="images/play-btn-white.png", alt="")
+			.videos__item
+				a.videos__item-icon(href="#")
+					img(src="images/play-btn-white.png", alt="")
+			.videos__item
+				a(href="#")
+					img(src="images/play-btn-white.png", alt="")
+			.videos__item
+				a.videos__item-icon(href="#")
+					img(src="images/play-btn-white.png", alt="")
 
 
 	// videos-end
@@ -46,6 +59,3 @@ block content
 	// Testimonials
 	section.testimonials.py-5
 		.section-title.mb-3 آراء مستخدمينا الصغار
-
-	// testimonials-end
-	include ./partials/_testimonials
