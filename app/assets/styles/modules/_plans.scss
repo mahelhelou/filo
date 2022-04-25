@@ -1,0 +1,37 @@
+.plans {
+	.row {
+		height: 440px;
+		background: $mainLightGreen;
+		align-items: center;
+	}
+
+	&__img {
+		width: 250px;
+		object-fit: cover;
+	}
+
+	&__features {
+		list-style: none;
+		padding: 0;
+
+		li {
+			position: relative;
+			padding-right: 1.5rem;
+			margin-bottom: 1rem;
+			color: #000;
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: .85rem;
+				height: .85rem;
+				border-radius: 50%;
+				background: $mainOrange;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+
+			}
+		}
+	}
+}
