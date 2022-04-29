@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#" data-toggle="modal" data-target="#loginUserHasNoAccount"><i class="fas fa-user"></i></a></div>
+          <div class="navbar__actions"><a href="#"><i class="fas fa-search search-btn"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#" data-toggle="modal" data-target="#loginUserHasNoAccount"><i class="fas fa-user"></i></a></div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -81,6 +81,21 @@
     <!-- Footer-->
     <footer class="site-footer py-5 bg-dark text-white"><img src="images/footer-bg.png"></footer>
     <!-- footer-end-->
+    
+    <!-- Search overlay-->
+    <div class="search-overlay">
+      <div class="search-overlay__content">
+        <h2 class="mb-5">ماذا تريد أن تشاهد على&nbsp;<strong class="font-weight-bold text-danger">فيلو؟</strong></h2>
+        <div class="search-overlay__search-input">
+          <div class="input-group mt-3">
+            <input class="form-control" type="search" placeholder="ابحث في فيلو..." name="s" autofocus>
+            <div class="input-group-append">
+              <div class="input-group-text"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        </div><i class="fas fa-times-circle search-overlay__close" aria-hidden="true"></i>
+      </div>
+    </div>
     
     <!-- Modals-->
         <!-- Modal-->
