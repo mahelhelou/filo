@@ -2,6 +2,7 @@ jQuery(function ($) {
 	let windowHeight = $(window).height();
 	let navbarHeight = $(".navbar").height();
 	let footerHeight = $(".site-footer").height();
+	let hostName = location.hostname;
 
 	// Search feature
 	// Search feature
@@ -39,13 +40,23 @@ jQuery(function ($) {
 	openSearchOverlay();
 	closeSearchOverlay();
 
-	// DOM clicks
+	// DOM actions
+	// When saving a story to favorites
 	$(".stories-section__item-save").click(function () {
 		$(this).html(
 			$(this).html() === '<span>حفظ</span><i class="far fa-bookmark"></i>'
 				? '<span>محفوظ</span><i class="fas fa-bookmark"></i>'
 				: '<span>حفظ</span><i class="far fa-bookmark"></i>'
 		);
+	});
+
+	// When searching for a keyword
+	$(".search-overlay__search-input form").submit(function (e) {
+		if (
+			$(".search-overlay__search-input form input.form-control").val() !== ""
+		) {
+			location.hostname = `${hostName}/search.html`;
+		}
 	});
 
 	// Videos owl carousel
