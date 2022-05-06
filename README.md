@@ -2,7 +2,10 @@
 
 ## Resources
 
-All links & tools that I can use in this project.
+- [Notifications Screen](https://codepen.io/FauzanKhan/pen/PPeBoN)
+- [Plane on Path](https://codepen.io)
+- [Plane on Scroll](https://codepen.io/ste-vg/pen/GRooLza)
+- [Move Along Path](https://tobiasahlin.com/blog/curved-path-animations-in-css/)
 
 ## Similar Web
 

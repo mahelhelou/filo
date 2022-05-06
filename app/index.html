@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search search-btn"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#" data-toggle="modal" data-target="#loginUserHasNoAccount"><i class="fas fa-user"></i></a></div>
+          <div class="navbar__actions"><i class="fas fa-search search-btn"></i><i class="fas fa-bell"></i><i class="fas fa-user" data-toggle="modal" data-target="#loginUserHasNoAccount"></i></div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -107,12 +107,14 @@
       <div class="search-overlay__content">
         <h2 class="mb-5">ماذا تريد أن تشاهد على&nbsp;<strong class="font-weight-bold text-danger">فيلو؟</strong></h2>
         <div class="search-overlay__search-input">
-          <div class="input-group mt-3">
-            <input class="form-control" type="search" placeholder="ابحث في فيلو..." name="s" autofocus>
-            <div class="input-group-append">
-              <div class="input-group-text"><i class="fas fa-search"></i></div>
+          <form>
+            <div class="input-group mt-3">
+              <input class="form-control" type="search" placeholder="ابحث في فيلو..." name="s" autofocus>
+              <div class="input-group-append">
+                <div class="input-group-text" type="submit"><i class="fas fa-search"></i></div>
+              </div>
             </div>
-          </div>
+          </form>
         </div><i class="fas fa-times-circle search-overlay__close" aria-hidden="true"></i>
       </div>
     </div>
@@ -131,10 +133,10 @@
                   <div class="d-flex flex-column text-center">
                     <form>
                       <div class="form-group">
-                        <input class="form-control" id="email1" type="email" placeholder="Your email address...">
+                        <input class="form-control" id="email1" type="email" placeholder="اسم المستخدم أو البريد الإلكتروني">
                       </div>
                       <div class="form-group">
-                        <input class="form-control" id="password1" type="password" placeholder="Your password...">
+                        <input class="form-control" id="password1" type="password" placeholder="كلمة المرور">
                       </div>
                       <button class="btn btn-info btn-block btn-round" type="button">Login</button>
                     </form>
