@@ -7,6 +7,7 @@
 - [Plane on Scroll](https://codepen.io/ste-vg/pen/GRooLza)
 - [Move Along Path](https://tobiasahlin.com/blog/curved-path-animations-in-css/)
 - [Video Item Bigger](https://stackoverflow.com/questions/71430226/how-to-overlap-item-in-owl-carousel-on-hover)
+- [Slider Design - Circular](https://codepen.io/thenahidul/pen/yPzwMK)
 
 ## Similar Web
 
