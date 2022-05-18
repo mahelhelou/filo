@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
-          <div class="navbar__actions"><a href="#"><i class="fas fa-search search-btn"></i></a><a href="#"><i class="fas fa-bell"></i></a><a href="#" data-toggle="modal" data-target="#loginUserHasNoAccount"><i class="fas fa-user"></i></a></div>
+          <div class="navbar__actions"><i class="fas fa-search search-btn"></i><i class="fas fa-bell"></i><i class="fas fa-user" data-toggle="modal" data-target="#login-form"></i></div>
           <!-- navbar-actions-end-->
         </div>
       </div>
@@ -180,33 +180,33 @@
     </div>
     
     <!-- Modals-->
-        <!-- Modal-->
-        <div class="modal fade" id="loginUserHasNoAccount" tabindex="-1" role="dialog" aria-labelledby="undefinedLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body">
-                <div class="form-title text-center">
-                  <h4>حساب جديد</h4>
-                  <div class="d-flex flex-column text-center">
-                    <form>
-                      <div class="form-group">
-                        <input class="form-control" id="email1" type="email" placeholder="Your email address...">
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control" id="password1" type="password" placeholder="Your password...">
-                      </div>
-                      <button class="btn btn-info btn-block btn-round" type="button">Login</button>
-                    </form>
+    <!-- Login Form Modal-->
+    <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="login-form-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content"><img src="images/airplane.gif" alt="airplane">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <h4>حساب جديد</h4>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" id="email1" type="email" placeholder="اسم المستخدم أو البريد الإلكتروني">
                   </div>
-                </div>
+                  <div class="form-group">
+                    <input class="form-control" id="password1" type="password" placeholder="كلمة المرور">
+                  </div>
+                  <button class="btn btn-info btn-block btn-round" type="button">Login</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-    <!-- modals-end-->
+      </div>
+    </div>
+    <!-- login-form-modal-end-->
     
     <!-- Scripts-->
     <script src="./dist/bundled.js"></script>

@@ -1,12 +1,9 @@
 .testimonials {
-	&__item-quote {
-		.fas {
-			opacity: .75;
-			font-size: 1.5rem;
-		}
-	}
-
-	.fa-star {
-		font-size: 1.5rem !important;
+	&__divider {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1000px;
+		margin-top: -2rem;
 	}
 }

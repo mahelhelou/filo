@@ -67,22 +67,22 @@
 	}
 
 	&__actions {
-		a {
+		i {
 			margin-right: 1.5rem;
 			text-decoration: none;
+			cursor: pointer;
+		}
 
+		.fa-search {
+			color: #569EDD;
+		}
 
-			.fa-search {
-				color: #569EDD;
-			}
+		.fa-bell {
+			color: #707070;
+		}
 
-			.fa-bell {
-				color: #707070;
-			}
-
-			.fa-user {
-				color: #F4775C;
-			}
+		.fa-user {
+			color: #F4775C;
 		}
 	}
 }
